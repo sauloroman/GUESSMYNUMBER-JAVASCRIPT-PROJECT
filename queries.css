@@ -1,0 +1,67 @@
+/* 1113px -----> 69.5625em */
+@media ( max-width: 69.5625em ) {
+  .heading--primary {
+    margin: 5rem 0 10rem 0;
+  }
+}
+
+/* 948px ------> 59.25em */
+@media ( max-width: 59.25em ) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* 852px ------> 53.25em */
+@media ( max-width: 53.25em ) {
+  html {
+    font-size: 53.125%;
+  }
+
+  .messages, 
+  .box--scores p{
+    font-size: 1.6rem;
+    line-height: 1.7;
+  }
+  
+  .box-guess {
+    column-gap: 5.6rem;
+  }
+}
+
+/* 708px ------> 44.25em */
+
+@media ( max-width: 44.25em ) {
+  .heading--primary {
+    font-size: 3rem;
+    margin: 5rem 0 12rem 0;
+  }
+
+  .header {
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    width: 15rem;
+    font-size: 1.5rem;
+  }
+
+  .guess {
+    padding: 2rem 0;
+    width: 25rem;
+  }
+
+  .box-guess {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  .number {
+    width: 12rem;
+  }
+}

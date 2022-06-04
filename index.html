@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Saulo Román Santillán Nava" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Styles of the project -->
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Queries -->
+    <link rel="preload" href="queries.css" as="style" />
+    <link rel="stylesheet" href="queries.css" />
+
+    <title>Adivina Mi Número!</title>
+
+  </head>
+  <body>
+
+    <header class="header">
+      <a href="#" id="btnAgain" class="btn">Otra Vez!</a>
+      <p class="header__text">Ingresa un número <span>(entre 1 y 20)</span></p>
+    </header>
+
+    <main class="box-number">
+      <h1 class="heading--primary">Adivina Mi Número!</h1>
+      <div id="number" class="number"> <span>?</span> </div>
+    </main>
+
+    <section class="box-guess">
+
+      <form class="guess--form">
+        <input id="guess" class="guess" type="number" min="1" max="20">
+        <input id="btnGuess" class="btn" type="submit" value="Intenta!">
+      </form>
+
+      <div class="guess--messages">
+        
+        <p id="messages" class="messages">Comienza a adivinar!...</p>
+
+        <div class="box--scores">
+          <p id="score">Puntaje 💯: <span>0</span></p>
+          <p id="highScore">Puntaje más alto 🔼: <span>0</span></p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

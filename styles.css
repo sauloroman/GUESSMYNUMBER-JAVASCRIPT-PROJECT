@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Press Start 2p', sans-serif;
+  background-color: #222;
+  color: #eee;
+}
+
+.btn, 
+.btn:link, 
+.btn:visited {
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: -1px;
+  font-size: 1.8rem;
+  font-family: inherit;
+  background-color: #ddd;
+  color: #222;
+  padding: 2.4rem 0;
+  border: none;
+  width: 20rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 3rem 0 3rem;
+}
+
+.header__text {
+  font-size: 1.6rem
+}
+
+.header__text span {
+  margin-top: 1.2rem;
+  display: block;
+}
+
+.box-number {
+  position: relative;
+  border-bottom: 5px solid #eee;
+  margin-bottom: 12rem; 
+}
+
+.heading--primary {
+  font-size: 3.6rem;
+  text-align: center;
+  margin: 3rem 0 10rem 0;
+}
+
+.number {
+  display: inline-block;
+  background-color: #ddd;
+  color: #222;
+  width: 15rem;
+  height: 12rem;
+  font-size: 5.6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+
+.box-guess {
+  margin: 0 auto;
+  width: 100rem;
+  max-width: 95%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  column-gap: 7.2rem;
+}
+
+.guess--form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.guess {
+  border: 4px solid #fff;
+  background-color: transparent;
+  padding: 3rem 0;
+  width: 30rem;
+  font-size: 5rem;
+  font-family: inherit;
+  color: #ddd;
+  text-align: center;
+}
+
+.messages {
+  margin-bottom: 8rem;
+  font-size: 1.8rem;
+}
+
+.box--scores p {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
